@@ -79,6 +79,7 @@ divide(c(1,2,10), c(2,5,20))
 vector_mean <- function(x,y) {
   sum(x)/sum(y)
 }
+attr(vector_mean,"comment") <- "vector_mean will return Inf if y == 0"
+
 X <- c(1,3,5,7,9)
 vector_mean(X,df$d)
-
